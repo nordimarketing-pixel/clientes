@@ -224,7 +224,7 @@ SECTIONS = [
 ]},
 {
 "icon": "instruments", "num": "07",
-"title": "Instrumental Odontológico",
+"title": "Instrumental — Exame, Cirurgia e Periodontia",
 "intro": "Instrumentais em aço inox das linhas Golgran e Millennium para exame, cirurgia e periodontia.",
 "items": [
     ("Espelho Bucal com Cabo", "Golgran", "Nº 3, 4 e 5  ·  Cabos coloridos disponíveis"),
@@ -233,11 +233,19 @@ SECTIONS = [
     ("Cureta Periodontal Gracey / Lucas / Molt", "Golgran", "Kit completo 3-4 a 13-14  ·  Cabo padrão ou silicone colorido"),
     ("Fórceps Odontológico", "Golgran", "Adulto e infantil, diversas numerações"),
     ("Alavanca e Elevador Apical", "Golgran", "Reto, esquerdo e direito, adulto"),
-    ("Espátulas e Calcadores para Resina/Cimento", "Golgran · Millennium", "Linha completa de formatos"),
-    ("Tesoura Cirúrgica", "Golgran", "Reta e curva, 11,5 a 17cm"),
 ]},
 {
-"icon": "bur", "num": "08",
+"icon": "instruments", "num": "08",
+"title": "Instrumental — Restauração e Acabamento",
+"intro": "Espátulas, calcadores e itens de acabamento para o dia a dia da dentística.",
+"items": [
+    ("Espátulas e Calcadores para Resina/Cimento", "Golgran · Millennium", "Linha completa de formatos"),
+    ("Tesoura Cirúrgica", "Golgran", "Reta e curva, 11,5 a 17cm"),
+    ("Cabo para Bisturi", "Golgran", "Nº 3, 4 e 5  ·  Aço inoxidável autoclavável"),
+    ("Tira de Lixa de Aço para Acabamento Interproximal", "American Burrs · Biodinâmica · Prevem", "150mm, serrilhada, centro neutro  ·  Pacote c/ 5 a 12 un"),
+]},
+{
+"icon": "bur", "num": "09",
 "title": "Brocas e Pontas Diamantadas",
 "intro": "Pontas diamantadas FG e brocas carbide para alta e baixa rotação, com mais de 60 códigos em estoque.",
 "items": [
@@ -246,7 +254,7 @@ SECTIONS = [
     ("Broca Gates Glidden / Largo", "Microdont", "Numerações 2 a 5, 28mm"),
 ]},
 {
-"icon": "mold", "num": "09",
+"icon": "mold", "num": "10",
 "title": "Moldagem e Gesso",
 "intro": "Materiais de moldagem elástica e gessos odontológicos tipo II, III e IV.",
 "items": [
@@ -256,7 +264,7 @@ SECTIONS = [
     ("Moldeira Plástica Perfurada", "Maquira · Bioart · Tecnodent", "Totais N1 a N5, superior/inferior"),
 ]},
 {
-"icon": "whitening", "num": "10",
+"icon": "whitening", "num": "11",
 "title": "Endodontia e Clareamento",
 "intro": "Insumos para tratamento de canal e protocolos de clareamento dental de consultório e caseiro.",
 "items": [
@@ -269,7 +277,7 @@ SECTIONS = [
     ("Clareador Dental Caseiro 10% a 22%", "Whiteness · FGM", "Seringa 3g"),
 ]},
 {
-"icon": "vitals", "num": "11",
+"icon": "vitals", "num": "12",
 "title": "Equipamentos de Diagnóstico",
 "intro": "Instrumentos de aferição para triagem clínica na recepção e consultório.",
 "items": [
@@ -281,7 +289,7 @@ SECTIONS = [
     ("Medidor de Glicemia + Tiras", "Accu-Chek · On Call Plus · Bioland", "Kit completo com lancetas"),
 ]},
 {
-"icon": "denture", "num": "12",
+"icon": "denture", "num": "13",
 "title": "Dentes Artificiais e Prótese",
 "intro": "Dentes de estoque Popdent (Vipi) e resinas acrílicas para bases de prótese.",
 "items": [
@@ -291,7 +299,7 @@ SECTIONS = [
     ("Resina Acrílica Autopolimerizável", "Vipi · TDV", "Cores rosa e vermelha, para reparos e escultura"),
 ]},
 {
-"icon": "antiseptic", "num": "13",
+"icon": "antiseptic", "num": "14",
 "title": "Consultório — Descartáveis e Antissépticos",
 "intro": "Itens de biossegurança, sucção e soluções de higiene bucal para completar a rotina do consultório.",
 "items": [
@@ -381,19 +389,19 @@ body { font-family: 'Liberation Sans','DejaVu Sans',sans-serif; color: var(--bod
 .section-title h1 { font-size: 17pt; margin:0 0 1.5mm 0; color: var(--ink); font-weight:700; }
 .section-title p { font-size: 9.3pt; margin:0; color: var(--body); max-width: 155mm; line-height:1.45; }
 
-.items { padding: 3mm 16mm 0 16mm; }
+.items { padding: 2mm 16mm 0 16mm; }
 .item {
-  display:flex; gap:5mm; align-items:flex-start;
-  padding: 5mm 0; border-bottom: 1px solid var(--line);
+  display:flex; gap:5mm; align-items:center;
+  padding: 3.6mm 0; border-bottom: 1px solid var(--line);
 }
 .item:last-child { border-bottom: none; }
 .item-ic {
-  width: 13mm; height:13mm; border-radius: 50%; background: var(--green-light);
-  display:flex; align-items:center; justify-content:center; flex-shrink:0; margin-top: .5mm;
-  overflow: hidden;
+  width: 19mm; height:19mm; border-radius: 3mm; background: var(--green-light);
+  display:flex; align-items:center; justify-content:center; flex-shrink:0;
+  overflow: hidden; padding: 1.3mm; border: 1px solid #DCEEE2;
 }
-.item-ic svg { width: 7mm; height:7mm; }
-.item-ic img { width: 100%; height: 100%; object-fit: cover; }
+.item-ic svg { width: 9mm; height:9mm; }
+.item-ic img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
 .item-name { font-size: 11pt; font-weight:700; color: var(--ink); margin: 0 0 1mm 0; }
 .item-brand { font-size: 8.6pt; color: var(--green-dark); font-weight:700; margin: 0 0 1.2mm 0; letter-spacing:.2px;}
 .item-var { font-size: 9.3pt; color: var(--body); line-height:1.4; margin:0; }
