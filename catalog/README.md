@@ -60,3 +60,17 @@ for s in bc.SECTIONS:
   errado antes da conferência final). Depois de mapear fotos, sempre
   reabra o arquivo final salvo em `assets/products/<slug>` e confirme que
   ele bate com o nome do produto antes de considerar concluído.
+
+## Catálogo Completo (estoque de 17/09/2026)
+
+`catalogo_dentmed_completo.pdf` — todos os 968 itens do relatório de estoque
+agrupados em 219 famílias (mesmo produto em cores/tamanhos/numerações
+diferentes = um card só), divididos em 23 setores. Cada setor tem título e
+um quadro de imagem.
+
+- Conteúdo: `completo_data.py` (cada família lista as linhas do relatório
+  que cobre, para conferência).
+- Gerar: `python3 build_completo.py` (precisa de Node + playwright e `pypdf`).
+- Trocar a imagem de um setor: salve `assets/sections/<key>.jpg` (`key` de
+  cada setor em `completo_data.py`, ex.: `luvas`, `resinas`, `radiologia`) e
+  gere de novo. Setores sem imagem mostram "Espaço para imagem".
